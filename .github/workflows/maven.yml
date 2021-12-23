@@ -28,9 +28,9 @@ jobs:
     - name: Build docker image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: dbnk
+        image: g5/dbnk
         tags: v1.0
-        registry: 401984347761.dkr.ecr.us-east-2.amazonaws.com/g5
+        registry: 401984347761.dkr.ecr.us-east-2.amazonaws.com
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
