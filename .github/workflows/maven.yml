@@ -34,6 +34,4 @@ jobs:
         username: ${{ secrets.GHCR_USERNAME }}
         password: ${{ secrets.GHCR_TOKEN }}
 
-  publish:
-      needs: build
 
