@@ -2,11 +2,19 @@ package G5.G5.student;
 
 import lombok.Data;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.time.LocalDate;
 
 @Data
+@Table(name = "student")
+@Entity
 public class Student {
 
+    @Id
+    @Column(name = "id")
     private Long id;
     private String name;
     private String email;

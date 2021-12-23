@@ -1,0 +1,13 @@
+
+spring:
+  application:
+    name: g5
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://database-1.ckmggaxu9dgu.us-east-2.rds.amazonaws.com:3306/g5_db?useUnicode=true
+    username: admin
+    password: admin1234
