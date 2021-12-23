@@ -24,3 +24,16 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+
+    - name: Build docker image
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: g5-docker-image
+        registry: ghcr.io
+        githubOrg: override-org # optional
+        username: ${{ secrets.GHCR_USERNAME }}
+        password: ${{ secrets.GHCR_TOKEN }}
+
+  publish:
+      needs: build
+
