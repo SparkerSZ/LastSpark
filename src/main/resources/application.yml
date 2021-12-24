@@ -1,7 +1,7 @@
 
 spring:
   application:
-    name: g5
+    name: dbnk
   jpa:
     show-sql: true
     hibernate:
@@ -9,5 +9,13 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://database-1.ckmggaxu9dgu.us-east-2.rds.amazonaws.com:3306/g5_db?useUnicode=true
-    username: admin
-    password: admin1234
+    username:
+    password:
+
+
+
+aws:
+  access-key:
+  secret-key:
+  s3:
+    bucket-name: g5bucket
