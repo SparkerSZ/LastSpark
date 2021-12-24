@@ -17,9 +17,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AwsConfig {
 
-    @Value("${aws.s3.end-point}")
-    private String s3EndPoint;
-
     @Value("${aws.access-key}")
     private String accessKey;
 
