@@ -1,7 +1,7 @@
 
 spring:
   application:
-    name: g5
+    name: dbnk
   jpa:
     show-sql: true
     hibernate:
@@ -11,3 +11,11 @@ spring:
     url: jdbc:mysql://database-1.ckmggaxu9dgu.us-east-2.rds.amazonaws.com:3306/g5_db?useUnicode=true
     username: admin
     password: admin1234
+
+
+
+aws:
+  access-key: AKIAV3GBCLZYQ5UQPM2S
+  secret-key: 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
+  s3:
+    bucket-name: g5bucket
