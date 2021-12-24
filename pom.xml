@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>G5</groupId>
-	<artifactId>g5</artifactId>
+	<artifactId>dbnk</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>G5</name>
 	<description>Demo project for Spring Boot</description>
@@ -67,7 +67,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>${docker.image.prefix}/${project.artifactId}</repository>
+					<repository>${project.artifactId}</repository>
 					<tag>${project.version}</tag>
 					<buildArgs>
 						<JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
