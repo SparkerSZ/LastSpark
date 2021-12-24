@@ -9,13 +9,13 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://database-1.ckmggaxu9dgu.us-east-2.rds.amazonaws.com:3306/g5_db?useUnicode=true
-    username:
-    password:
+    username: admin
+    password: admin1234
 
 
 
 aws:
-  access-key:
-  secret-key:
+  access-key: ${access-key:xxx}
+  secret-key: ${secret-key:yyy}
   s3:
     bucket-name: g5bucket

@@ -23,10 +23,8 @@ public class AwsConfig {
     @Value("${aws.secret-key}")
     private String secretKey;
 
-
-
     @Bean
-    public AmazonS3 s3client() {
+    public AmazonS3 amazonS3() {
 
         AWSCredentials awsCredentials = new BasicAWSCredentials(accessKey,secretKey);
 
